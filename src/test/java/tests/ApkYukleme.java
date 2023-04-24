@@ -15,7 +15,7 @@ public class ApkYukleme {
 
     AndroidDriver<AndroidElement> driver;
     //AppiumDriver<MobileElement> appiumDriver;
-    final String cihazAdi="MyPhone";
+    final String cihazAdi="MyPhone2";
     final String platformIsmi="Android";
     final String version="10.0";
     final String automation="UiAutomator2";
@@ -30,7 +30,7 @@ public class ApkYukleme {
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,platformIsmi);
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,version);
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,automation);
-        capabilities.setCapability(MobileCapabilityType.APP,"C:\\Users\\Lenovo\\Desktop\\API KLASOR\\APPIUM\\Apps\\Kiwi.com - Book Cheap Flights_2023.14.0_Apkpure.apk");
+        capabilities.setCapability(MobileCapabilityType.APP,"C:\\Users\\Lenovo\\Desktop\\API KLASOR\\APPIUM\\Apps\\all-currency-converter-3-9-0.apk");
 
         driver=new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
